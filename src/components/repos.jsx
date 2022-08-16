@@ -12,7 +12,6 @@ const Repositories = () => {
         .then(data => setRepos(data.items))
     }, [])
 
-    console.log(repos)
     return (
         <div>
             {repos.map(item => {

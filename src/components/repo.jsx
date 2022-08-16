@@ -13,7 +13,7 @@ const Repository = (props) => {
                 <div className="star-issues-time">
                     <p className="star">Stars: {stargazers_count}</p>
                     <p className="issue">Issues: {open_issues}</p>
-                    <p>Submitted {Math.floor((new Date().getTime() - new Date(created_at).getTime()) / (1000 * 60 * 60 * 24))} days by {owner.login}</p>
+                    <p>Submitted {Math.floor((new Date().getTime() - new Date(created_at).getTime()) / (1000 * 60 * 60 * 24))} days ago by {owner.login}</p>
                 </div>
             </div>
         </div>
